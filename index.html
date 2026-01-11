@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Japanese Flashcards</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-neutral-950 text-white min-h-screen flex items-center justify-center p-4">
+
+  <div class="w-full max-w-md card space-y-6">
+    
+    <!-- Header -->
+    <div class="flex justify-between items-center">
+      <h1 class="text-xl font-semibold">Japanese Flashcards</h1>
+      <select id="mode" class="select">
+        <option value="hiragana">Hiragana</option>
+        <option value="katakana">Katakana</option>
+      </select>
+    </div>
+
+    <!-- Character -->
+    <div class="text-center">
+      <div id="character" class="character">あ</div>
+      <p class="hint">Type the Romaji</p>
+    </div>
+
+    <!-- Input -->
+    <input
+      id="answer"
+      type="text"
+      placeholder="e.g. a"
+      class="input"
+    />
+
+    <!-- Submit -->
+    <button onclick="checkAnswer()" class="primary-btn">
+      Submit
+    </button>
+
+    <!-- Feedback -->
+    <div id="feedback" class="feedback"></div>
+
+    <!-- Words -->
+    <div id="words" class="words"></div>
+
+    <!-- Next -->
+    <button onclick="nextCard()" class="secondary-btn">
+      Next Character →
+    </button>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

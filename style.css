@@ -1,0 +1,77 @@
+body {
+  font-family: ui-sans-serif, system-ui;
+}
+
+.card {
+  background-color: #171717;
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.character {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.hint {
+  font-size: 0.875rem;
+  color: #a3a3a3;
+}
+
+.input {
+  width: 100%;
+  background-color: #262626;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 1.125rem;
+  outline: none;
+}
+
+.input:focus {
+  box-shadow: 0 0 0 2px white;
+}
+
+.select {
+  background-color: #262626;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.primary-btn {
+  width: 100%;
+  background-color: white;
+  color: black;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  font-weight: 600;
+}
+
+.primary-btn:hover {
+  opacity: 0.9;
+}
+
+.secondary-btn {
+  width: 100%;
+  border: 1px solid #404040;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.secondary-btn:hover {
+  background-color: #262626;
+}
+
+.feedback {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.words {
+  font-size: 0.875rem;
+  color: #d4d4d4;
+}
